@@ -16,8 +16,8 @@ var WELCOME={
   en:{title:'Welcome to Old Town Courtyard!',sub:"We're delighted to have you. Find everything you need for a wonderful stay — from access instructions to our recommendations for the most beautiful corner of Bucharest.",maps:'Open in Google Maps',nav:'What are you looking for?',langLabel:'Choose language / Alegeți limba'}
 };
 var GRID={
-  ro:{access:'Acces & Check-in',info:'Facilități',wifi:'Wi-Fi',parking:'Parcare',around:'Împrejur',howtogo:'Cum ajung',faq:'FAQ',checkout:'Plecare',problems:'Probleme?',story:'Istoria Locului',rhstory:'Povestea Noastră',work:'Colaborare',contact:'Contact'},
-  en:{access:'Access & Check-in',info:'Amenities',wifi:'Wi-Fi',parking:'Parking',around:'Around',howtogo:'Getting Here',faq:'FAQ',checkout:'Checkout',problems:'Issues?',story:'History',rhstory:'Our Story',work:'Work With Us',contact:'Contact'}
+  ro:{access:'Acces & Check-in',info:'Facilități',wifi:'Wi-Fi',parking:'Parcare',around:'Recomandări',howtogo:'Cum ajung',faq:'FAQ',checkout:'Plecare',problems:'Probleme?',story:'Istoria Locului',rhstory:'Povestea Noastră',work:'Colaborare',contact:'Contact'},
+  en:{access:'Access & Check-in',info:'Amenities',wifi:'Wi-Fi',parking:'Parking',around:'Recommendations',howtogo:'Getting Here',faq:'FAQ',checkout:'Checkout',problems:'Issues?',story:'History',rhstory:'Our Story',work:'Work With Us',contact:'Contact'}
 };
 function pickLang(l){
   _lang=l;
@@ -212,10 +212,9 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
       <button class="grid-btn" onclick="enterGuide('info')"><span class="gb-icon">🛋️</span><span class="gb-label" data-key="info">Facilități</span></button>
       <button class="grid-btn" onclick="enterGuide('wifi')"><span class="gb-icon">📶</span><span class="gb-label" data-key="wifi">Wi-Fi</span></button>
       <button class="grid-btn" onclick="enterGuide('parking')"><span class="gb-icon">🅿️</span><span class="gb-label" data-key="parking">Parcare</span></button>
-      <button class="grid-btn" onclick="enterGuide('around')"><span class="gb-icon">🍽️</span><span class="gb-label" data-key="around">Împrejur</span></button>
+      <button class="grid-btn" onclick="enterGuide('around')"><span class="gb-icon">🍽️</span><span class="gb-label" data-key="around">Recomandări</span></button>
       <button class="grid-btn" onclick="enterGuide('howtogo')"><span class="gb-icon">✈️</span><span class="gb-label" data-key="howtogo">Cum ajung</span></button>
       <button class="grid-btn" onclick="enterGuide('faq')"><span class="gb-icon">❓</span><span class="gb-label" data-key="faq">FAQ</span></button>
-      <button class="grid-btn" onclick="enterGuide('extras')"><span class="gb-icon">🌟</span><span class="gb-label" data-key="extras">Servicii Extra</span></button>
       <button class="grid-btn" onclick="enterGuide('checkout')"><span class="gb-icon">🧳</span><span class="gb-label" data-key="checkout">Plecare</span></button>
       <button class="grid-btn" onclick="enterGuide('problems')"><span class="gb-icon">🛠️</span><span class="gb-label" data-key="problems">Probleme?</span></button>
       <button class="grid-btn" onclick="enterGuide('review')"><span class="gb-icon">⭐</span><span class="gb-label" data-key="review">Lasă o recenzie</span></button>
@@ -247,7 +246,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
   <button class="nav-btn" data-tab="info" onclick="doTab('info',this)"><span class="ic">🛋️</span><span class="ro">Facilități</span><span class="en" style="display:none">Amenities</span></button>
   <button class="nav-btn" data-tab="wifi" onclick="doTab('wifi',this)"><span class="ic">📶</span>Wi-Fi</button>
   <button class="nav-btn" data-tab="parking" onclick="doTab('parking',this)"><span class="ic">🅿️</span><span class="ro">Parcare</span><span class="en" style="display:none">Parking</span></button>
-  <button class="nav-btn" data-tab="around" onclick="doTab('around',this)"><span class="ic">🍽️</span><span class="ro">Împrejur</span><span class="en" style="display:none">Around</span></button>
+  <button class="nav-btn" data-tab="around" onclick="doTab('around',this)"><span class="ic">🍽️</span><span class="ro">Recomandări</span><span class="en" style="display:none">Recommendations</span></button>
   <button class="nav-btn" data-tab="howtogo" onclick="doTab('howtogo',this)"><span class="ic">✈️</span><span class="ro">Cum ajung</span><span class="en" style="display:none">Getting Here</span></button>
   <button class="nav-btn" data-tab="faq" onclick="doTab('faq',this)"><span class="ic">❓</span>FAQ</button>
   <button class="nav-btn" data-tab="extras" onclick="doTab('extras',this)"><span class="ic">🌟</span><span class="ro">Extra</span><span class="en" style="display:none">Extras</span></button>
@@ -323,7 +322,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
     </div></div>
 
     <div class="card"><div class="ch"><span class="ci">🕒</span><span class="ct">Check-in &amp; Check-out</span></div><div class="cb">
-      <div class="ir"><span class="il">Check-in</span><span class="iv" style="font-weight:600;">începând cu ora 16:00</span></div>
+      <div class="ir"><span class="il">Check-in</span><span class="iv" style="font-weight:600;">începând cu ora 15:00</span></div>
       <div class="ir"><span class="il">Check-out</span><span class="iv" style="font-weight:600;">până la ora 11:00</span></div>
       <div class="hl" style="margin-top:12px;margin-bottom:0;"><p>✨ <strong>Early check-in gratuit</strong> — în funcție de disponibilitate, adesea posibil fără costuri suplimentare. Scrieți-ne în ziua sosirii!</p></div>
     </div></div>
@@ -389,7 +388,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
     </div></div>
 
     <div class="card"><div class="ch"><span class="ci">🕒</span><span class="ct">Check-in &amp; Check-out</span></div><div class="cb">
-      <div class="ir"><span class="il">Check-in</span><span class="iv" style="font-weight:600;">from 4:00 PM</span></div>
+      <div class="ir"><span class="il">Check-in</span><span class="iv" style="font-weight:600;">from 3:00 PM</span></div>
       <div class="ir"><span class="il">Check-out</span><span class="iv" style="font-weight:600;">by 11:00 AM</span></div>
       <div class="hl" style="margin-top:12px;margin-bottom:0;"><p>✨ <strong>Free early check-in</strong> — often possible at no extra cost, subject to availability. Message us on arrival day!</p></div>
     </div></div>
@@ -435,7 +434,10 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
         <div class="ai"><span class="aic">🛁</span><span class="ait">Prosoape 1 mare + 1 mic / pers.</span></div>
         <div class="ai"><span class="aic">💆</span><span class="ait">Săpun, șampon, gel duș, feon</span></div>
         <div class="ai"><span class="aic">🔥</span><span class="ait">Detector fum permanent</span></div>
+        <div class="ai"><span class="aic">💨</span><span class="ait">Ventilație cu recuperare de căldură PRANA</span></div>
+        <div class="ai"><span class="aic">🌿</span><span class="ait">Ozonificare periodică pentru igienizare</span></div>
       </div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="cb" style="padding:14px 16px;"><p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:8px;">Fiecare studio este dotat cu un sistem de <strong>ventilație cu recuperare de căldură PRANA 150 ERP Premium Plus</strong> — asigură aer proaspăt filtrat în permanență, menținând temperatura și eliminând umiditatea.</p><p style="font-size:13px;color:var(--text-mid);line-height:1.7;">De asemenea, fiecare studio este <strong>ozonificat periodic</strong> pentru igienizare și sterilizare maximă. Ținem foarte mult la sănătatea oaspeților noștri. 🌿</p></div></div>
     </div></div>
 
     <div class="card"><div class="ch"><span class="ci">🚬</span><span class="ct">Zona de fumat</span></div><div class="cb">
@@ -443,15 +445,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
       <div class="hl"><p>✅ Zona de fumat se află exclusiv <strong>în curtea interioară</strong> — fiecare studio are propria scrumieră acolo. Vă rugăm frumos să respectați această regulă pentru confortul tuturor oaspeților.</p></div>
     </div></div>
 
-    <div class="card"><div class="ch"><span class="ci">💰</span><span class="ct">Taxa de oraș — important!</span></div><div class="cb">
-      <div class="tax-box">
-        <p><strong>10 lei / persoană / noapte</strong></p>
-        <p style="margin-top:8px;font-size:12px;">Exemplu: 2 persoane × 3 nopți = <strong>60 lei</strong></p>
-      </div>
-      <p>Știm că poate fi o surpriză neplăcută să afli de această taxă după ce ai rezervat — ne pare sincer rău pentru acest inconvenient. <strong>Banii nu ajung la noi</strong> — aceasta este o reglementare locală relativ nouă, impusă de autoritățile municipale tuturor unităților de cazare din București, fără excepție.</p>
-      <p>Taxa se aplică <strong>tuturor oaspeților</strong> — indiferent dacă sunt rezidenți sau nerezidenți ai României. Trebuie să ne conformăm și facem tot ce putem să fim cât mai transparenți în această privință.</p>
-      <div class="hl"><p>💳 Se poate achita <strong>cash în studio</strong> sau prin <strong>transfer bancar</strong> — trimiteți-ne confirmarea pe WhatsApp sau pe platforma de rezervare. Vă mulțumim mult pentru înțelegere!</p></div>
-    </div></div>
+    
   </div>
 
   <div class="en" style="display:none">
@@ -491,7 +485,10 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
         <div class="ai"><span class="aic">🛁</span><span class="ait">Towels 1 large + 1 small / person</span></div>
         <div class="ai"><span class="aic">💆</span><span class="ait">Soap, shampoo, shower gel, hair dryer</span></div>
         <div class="ai"><span class="aic">🔥</span><span class="ait">Permanent smoke detector</span></div>
+        <div class="ai"><span class="aic">💨</span><span class="ait">PRANA heat recovery ventilation</span></div>
+        <div class="ai"><span class="aic">🌿</span><span class="ait">Periodic ozone treatment for hygiene</span></div>
       </div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="cb" style="padding:14px 16px;"><p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:8px;">Every studio is equipped with a <strong>PRANA 150 ERP Premium Plus heat recovery ventilation system</strong> — providing continuously filtered fresh air, maintaining temperature and eliminating humidity.</p><p style="font-size:13px;color:var(--text-mid);line-height:1.7;">Each studio also undergoes <strong>periodic ozone treatment</strong> for maximum hygiene and sterilisation. We care deeply about the health of our guests. 🌿</p></div></div>
     </div></div>
 
     <div class="card"><div class="ch"><span class="ci">🚬</span><span class="ct">Smoking area</span></div><div class="cb">
@@ -499,15 +496,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
       <div class="hl"><p>✅ The smoking area is exclusively <strong>in the inner courtyard</strong> — each studio has its own ashtray there. Please respect this rule for the comfort of all guests.</p></div>
     </div></div>
 
-    <div class="card"><div class="ch"><span class="ci">💰</span><span class="ct">City Tax — important!</span></div><div class="cb">
-      <div class="tax-box">
-        <p><strong>10 RON / person / night</strong></p>
-        <p style="margin-top:8px;font-size:12px;">Example: 2 guests × 3 nights = <strong>60 RON</strong></p>
-      </div>
-      <p>We understand this may come as an unexpected charge after booking — we're genuinely sorry for any inconvenience. <strong>This money does not go to us</strong> — it is a relatively new local regulation imposed by the Bucharest city authorities on all accommodation units, without exception.</p>
-      <p>The tax applies to <strong>all guests</strong> — regardless of whether they are residents or non-residents of Romania. We are required to comply and we do our best to be as transparent as possible about this.</p>
-      <div class="hl"><p>💳 Can be paid <strong>cash in the studio</strong> or by <strong>bank transfer</strong> — please send us confirmation on WhatsApp or your booking platform. Thank you so much for your understanding!</p></div>
-    </div></div>
+    
   </div>
 </div>
 
@@ -581,80 +570,104 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
 
 <!-- AROUND -->
 <div class="section" id="tab-around">
-<div class="ro">
-  <div class="sec"><em>Recomandări</em></div>
-  <div class="card"><div class="ch"><span class="ci">🍽️</span><span class="ct">Restaurante pentru turiști</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Caru' cu Bere</div><div class="pid">Strada Stavropoleos 3-5 · Iconic din 1879. Arhitectură neo-gotică spectaculoasă — stați la interior! Bucătărie românească. Rezervare recomandată.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Iconic</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Hanu' lui Manuc</div><div class="pid">Strada Franceză 62-64 · Cel mai vechi han în funcțiune (1808). Curte interioară, muzică live, mâncare românească și turcească.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Istoric</span><span class="tag">3 min</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">🥘</span><span class="ct">Mâncare tipică — ca un local</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Vatra</div><div class="pid">Bucătărie românească autentică. <strong>De încercat:</strong> șnițelul cu cartofi prăjiți de casă — legendar. Atmosferă caldă, prețuri corecte.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Local</span><span class="tag">5 min</span></div></div>
-    <div class="pio"><div class="pin">La Placinte</div><div class="pid">Strada Lipscani · Bucătărie moldovenească. <strong>De încercat:</strong> plăcinte cu varză/brânză, sarmale cu smântână, mămăligă cu brânză. Prețuri accesibile.</div><div class="pts"><span class="tag">Moldovenesc</span><span class="tag">Ieftin</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Must-try — mâncăruri românești</div><div class="pid">🥩 <strong>Mici</strong> — mici la grătar cu muștar · 🥟 <strong>Sarmale</strong> — cu smântână · 🍮 <strong>Papanași</strong> — cel mai bun desert românesc! · 🍷 <strong>Vin fiert</strong> — obligatoriu iarna · 🫕 <strong>Ciorbă de burtă</strong> — supă tradițională consistentă</div><div class="pts"><span class="tag">Must Try</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">☕</span><span class="ct">Specialty Coffee</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Origo</div><div class="pid">Strada Lipscani 9 · Primul specialty coffee din București (2013). Prăjesc propriile boabe. Seara devine bar de cocktailuri.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Nobis</div><div class="pid">Strada Lipscani 24 · Hidden gem chiar lângă voi. Design minimal, liniște.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">1 min</span></div></div>
-    <div class="pio"><div class="pin">Boteca13</div><div class="pid">O cafenea cu un vibe fantastic, chiar aproape de centrul vechi. Cafea de specialitate și preparate senzaționale — o experiență în sine. Întrebați de <strong>Bogdan</strong> și spuneți că veniți din partea lui <strong>Alex de la RH</strong> — va ști. ☕<div style="margin-top:8px;"><a href="https://share.google/HQ8A9v52Qt0QqbKwn" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:6px 12px;text-decoration:none;"><span>📍</span><span style="font-size:11px;font-weight:600;color:var(--gold);">Vezi locația</span></a></div></div><div class="pts"><span class="tag">Specialty Coffee</span><span class="tag">Vibe unic</span><span class="tag">Aproape</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">✂️</span><span class="ct">Barbershop — Another Barbershop</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Another Barbershop</div>
-    <div class="pid">Un barbershop de excepție — recomand cu drag, cel mai bun din oraș. Cereți-l pe <strong>Andrei Tulumb</strong> și spuneți că veniți din partea lui <strong>Alex de la RH</strong> — veți fi tratați cu siguranță cu totul special. 🙏<br><br>Faceți programare în avans pe site!</div>
-    <div class="pts"><span class="tag">Programare obligatorie</span></div>
-    <div style="margin-top:10px;"><a href="https://anotherbarbershop.ro" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:8px 14px;text-decoration:none;"><span>💈</span><span style="font-size:12px;font-weight:600;color:var(--gold);">anotherbarbershop.ro</span></a></div>
+  <div class="ro">
+    <div class="sec"><em>Recomandări</em></div>
+    <div class="card"><div class="ch"><span class="ci">🍽️</span><span class="ct">Restaurante pentru turiști</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Caru' cu Bere</div><div class="pid">Strada Stavropoleos 3-5 · Iconic din 1879. Arhitectură neo-gotică spectaculoasă — stați la interior! Bucătărie românească tradițională. Rezervare recomandată.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Iconic</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Hanu' lui Manuc</div><div class="pid">Strada Franceză 62-64 · Cel mai vechi han în funcțiune (1808). Curte interioară superbă, muzică live, mâncare românească și turcească autentică.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Istoric</span><span class="tag">3 min</span></div></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">🥘</span><span class="ct">Mâncare tipică — ca un local</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Vatra</div><div class="pid">Bucătărie românească autentică, loc de suflet pentru localnici. <strong>Trebuie să încercați:</strong> șnițelul cu cartofi prăjiți de casă — legendar. Atmosferă caldă, prețuri corecte.</div><div class="pts"><span class="tag">Românesc</span><span class="tag">Local</span><span class="tag">5 min</span></div></div>
+      <div class="pio"><div class="pin">La Placinte</div><div class="pid">Strada Lipscani · Bucătărie moldovenească autentică. <strong>Trebuie să încercați:</strong> plăcintele cu varză sau brânză, sarmale cu smântână, mămăligă cu brânză și ouă. Prețuri foarte accesibile — mâncă ca un localnic!</div><div class="pts"><span class="tag">Moldovenesc</span><span class="tag">Ieftin</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">De încercat neapărat — mâncăruri românești</div><div class="pid">🥩 <strong>Mici</strong> — mici de carne la grătar cu muștar, un clasic absolut · 🥟 <strong>Sarmale</strong> — rulouri de varză umplute cu carne și orez, de obicei cu smântână · 🍮 <strong>Papanași</strong> — gogoși din brânză cu smântână și dulceață (cel mai bun desert românesc!) · 🍷 <strong>Vin fiert</strong> — obligatoriu iarna, aromat cu scorțișoară și cuișoare · 🫕 <strong>Ciorbă de burtă</strong> — supă tradițională consistentă, iubită de localnici</div><div class="pts"><span class="tag">Must Try</span><span class="tag">Tradițional</span></div></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">☕</span><span class="ct">Specialty Coffee</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Origo</div><div class="pid">Strada Lipscani 9 · Primul specialty coffee din București (2013). Prăjesc propriile boabe, V60, AeroPress, espresso. Design minimalist. Seara devine bar de cocktailuri.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">Roasterie proprie</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Nobis</div><div class="pid">Strada Lipscani 24 · Hidden gem chiar lângă voi. Design minimal, liniște — perfect pentru o dimineață lentă.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">Hidden Gem</span><span class="tag">1 min</span></div></div>
+    </div></div>
+
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🤝</span><span class="ct">Recomandările lui Alex</span></div><div class="cb" style="padding-top:8px;">
+    <div class="hl"><p>Spuneți că veniți din partea lui <strong>Alex de la RH</strong> — veți fi tratați cu totul special de fiecare dată. 🙏</p></div>
+    <div class="pio">
+      <div class="pin">💈 Another Barbershop</div>
+      <div class="pid">Cel mai bun barbershop din oraș — recomand cu drag. Cereți-l pe <strong>Andrei Tulumb</strong> și veți fi pe mâini bune. Faceți programare în avans!</div>
+      <div class="pts"><span class="tag">Programare obligatorie</span></div>
+      <div style="margin-top:8px;"><a href="https://anotherbarbershop.ro" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:7px 13px;text-decoration:none;"><span>💈</span><span style="font-size:12px;font-weight:600;color:var(--gold);">anotherbarbershop.ro</span></a></div>
+    </div>
+    <div class="pio" style="border-top:1px solid var(--off);padding-top:12px;">
+      <div class="pin">☕ Boteca13</div>
+      <div class="pid">O cafenea cu un vibe fantastic, chiar aproape de centrul vechi. Cafea de specialitate și preparate senzaționale — o experiență în sine. Întrebați de <strong>Bogdan</strong>. ☕</div>
+      <div class="pts"><span class="tag">Specialty Coffee</span><span class="tag">Vibe unic</span></div>
+      <div style="margin-top:8px;"><a href="https://share.google/HQ8A9v52Qt0QqbKwn" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:7px 13px;text-decoration:none;"><span>📍</span><span style="font-size:11px;font-weight:600;color:var(--gold);">Vezi locația</span></a></div>
     </div>
   </div></div>
   <div class="card"><div class="ch"><span class="ci">🏦</span><span class="ct">Practic — ATM, schimb valutar, supermarket</span></div><div class="cb">
-    <div class="ir"><span class="il">Supermarket</span><span class="iv">Mega Image — Calea Victoriei sau Piața Unirii · ~07:00–23:00 · 5–8 min</span></div>
-    <div class="ir"><span class="il">ATM</span><span class="iv">Banca Transilvania — Strada Lipscani sau Piața Unirii · 5 min</span></div>
-    <div class="ir"><span class="il">Schimb valutar</span><span class="iv">Multiple case pe Strada Lipscani și Piața Unirii · verificați cursul</span></div>
-    <div class="ir"><span class="il">Farmacie</span><span class="iv">Catena sau Sensiblu — Calea Victoriei sau Piața Unirii · 5–8 min</span></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">🏛️</span><span class="ct">Obiective — ce să nu ratați</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Curtea Veche</div><div class="pid">Strada Franceză 23-25 · Ruinele curții lui Vlad Țepeș, sec. XV. La 3 minute. Intrare liberă.</div><div class="pts"><span class="tag">Istorie</span><span class="tag">3 min</span></div></div>
-    <div class="pio"><div class="pin">Biserica Stavropoleos</div><div class="pid">Strada Stavropoleos 4 · Bijuteria arhitecturală a centrului vechi (1724). Un moment rar de liniște în inima orașului.</div><div class="pts"><span class="tag">Arhitectură</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Cărturești Carusel</div><div class="pid">Strada Lipscani 55 · Una dintre cele mai frumoase librării din lume — 6 etaje, cafenea la etaj.</div><div class="pts"><span class="tag">Cultură</span><span class="tag">3 min</span></div></div>
-    <div class="pio"><div class="pin">Pasajul Macca-Villacrosse</div><div class="pid">Calea Victoriei · Pasaj cu sticlă galbenă din 1891 — un unghi de fotografie obligatoriu.</div><div class="pts"><span class="tag">Fotogenic</span><span class="tag">5 min</span></div></div>
-  </div></div>
-</div>
-<div class="en" style="display:none">
-  <div class="sec"><em>Recommendations</em></div>
-  <div class="card"><div class="ch"><span class="ci">🍽️</span><span class="ct">Tourist Restaurants</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Caru' cu Bere</div><div class="pid">Strada Stavropoleos 3-5 · Iconic since 1879. Spectacular neo-Gothic architecture — sit inside! Traditional Romanian cuisine. Reservation recommended.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Iconic</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Hanu' lui Manuc</div><div class="pid">Strada Franceză 62-64 · Bucharest's oldest operating inn (1808). Inner courtyard, live music, Romanian & Turkish cuisine.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Historic</span><span class="tag">3 min</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">🥘</span><span class="ct">Eat like a local</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Vatra</div><div class="pid">Authentic Romanian cuisine. <strong>Must try:</strong> schnitzel with homemade chips — legendary. Warm atmosphere, honest prices.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Local</span><span class="tag">5 min</span></div></div>
-    <div class="pio"><div class="pin">La Placinte</div><div class="pid">Strada Lipscani · Traditional Moldovan cuisine. <strong>Must try:</strong> cabbage/cheese pies, cabbage rolls, polenta with cheese. Very affordable.</div><div class="pts"><span class="tag">Moldovan</span><span class="tag">Affordable</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Must-try Romanian dishes</div><div class="pid">🥩 <strong>Mici</strong> — grilled meat rolls with mustard · 🥟 <strong>Sarmale</strong> — cabbage rolls with sour cream · 🍮 <strong>Papanași</strong> — best Romanian dessert! · 🍷 <strong>Mulled wine</strong> — a must in winter · 🫕 <strong>Ciorbă de burtă</strong> — hearty traditional tripe soup</div><div class="pts"><span class="tag">Must Try</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">☕</span><span class="ct">Specialty Coffee</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Origo</div><div class="pid">Strada Lipscani 9 · Bucharest's original specialty coffee shop (2013). Own roastery. Turns into a cocktail bar in the evening.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Nobis</div><div class="pid">Strada Lipscani 24 · Hidden gem right next to you. Minimal design, calm atmosphere.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">1 min</span></div></div>
-    <div class="pio"><div class="pin">Boteca13</div><div class="pid">A coffee shop with a fantastic vibe, just a short walk from the Old Town. Specialty coffee and sensational food — an experience in itself. Ask for <strong>Bogdan</strong> and say you are coming from <strong>Alex from RH</strong> — he will know. ☕<div style="margin-top:8px;"><a href="https://share.google/HQ8A9v52Qt0QqbKwn" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:6px 12px;text-decoration:none;"><span>📍</span><span style="font-size:11px;font-weight:600;color:var(--gold);">View on Maps</span></a></div></div><div class="pts"><span class="tag">Specialty Coffee</span><span class="tag">Unique vibe</span><span class="tag">Nearby</span></div></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">✂️</span><span class="ct">Barbershop — Another Barbershop</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Another Barbershop</div>
-    <div class="pid">An exceptional barbershop — personally recommended, best in the city. Ask for <strong>Andrei Tulumb</strong> and mention you are coming from <strong>Alex from RH</strong> — you will receive the most special treatment guaranteed. 🙏<br><br>Book your appointment in advance on their website!</div>
-    <div class="pts"><span class="tag">Booking required</span></div>
-    <div style="margin-top:10px;"><a href="https://anotherbarbershop.ro" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:8px 14px;text-decoration:none;"><span>💈</span><span style="font-size:12px;font-weight:600;color:var(--gold);">anotherbarbershop.ro</span></a></div>
+      <div class="ir"><span class="il">Supermarket</span><span class="iv">Mega Image — Calea Victoriei sau Piața Unirii · program ~07:00–23:00 · 5–8 min pe jos</span></div>
+      <div class="ir"><span class="il">ATM</span><span class="iv">Banca Transilvania — Strada Lipscani sau Piața Unirii · multiple ATM-uri disponibile · 5 min</span></div>
+      <div class="ir"><span class="il">Schimb valutar</span><span class="iv">Multiple case de schimb pe Strada Lipscani și în jurul Pieței Unirii · verificați cursul înainte — variază · 5 min</span></div>
+      <div class="ir"><span class="il">Farmacie</span><span class="iv">Catena sau Sensiblu — Calea Victoriei sau Piața Unirii · unele cu program extins · 5–8 min</span></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">🏛️</span><span class="ct">Obiective turistice — ce să nu ratați</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Curtea Veche</div><div class="pid">Strada Franceză 23-25 · Ruinele curții lui Vlad Țepeș, sec. XV — la 3 minute. Intrare liberă.</div><div class="pts"><span class="tag">Istorie</span><span class="tag">3 min</span></div></div>
+      <div class="pio"><div class="pin">Biserica Stavropoleos</div><div class="pid">Strada Stavropoleos 4 · Bijuteria arhitecturală a centrului vechi (1724) — un moment de liniște autentică.</div><div class="pts"><span class="tag">Arhitectură</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Cărturești Carusel</div><div class="pid">Strada Lipscani 55 · Una dintre cele mai frumoase librării din lume — 6 etaje albe, cafenea la etaj.</div><div class="pts"><span class="tag">Cultură</span><span class="tag">3 min</span></div></div>
+      <div class="pio"><div class="pin">Pasajul Macca-Villacrosse</div><div class="pid">Calea Victoriei · Pasaj cu sticlă galbenă din 1891 — un unghi de fotografie obligatoriu.</div><div class="pts"><span class="tag">Fotogenic</span><span class="tag">5 min</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="en" style="display:none">
+    <div class="sec"><em>Recommendations</em></div>
+    <div class="card"><div class="ch"><span class="ci">🍽️</span><span class="ct">Tourist Restaurants</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Caru' cu Bere</div><div class="pid">Strada Stavropoleos 3-5 · Iconic since 1879. Spectacular neo-Gothic architecture — sit inside! Traditional Romanian cuisine. Reservation recommended.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Iconic</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Hanu' lui Manuc</div><div class="pid">Strada Franceză 62-64 · Bucharest's oldest operating inn (1808). Gorgeous courtyard, live music, authentic Romanian &amp; Turkish cuisine.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Historic</span><span class="tag">3 min</span></div></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">🥘</span><span class="ct">Eat like a local</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Vatra</div><div class="pid">Authentic Romanian cuisine, a favourite among locals. <strong>Must try:</strong> schnitzel with homemade chips — legendary. Warm atmosphere, honest prices.</div><div class="pts"><span class="tag">Romanian</span><span class="tag">Local</span><span class="tag">5 min</span></div></div>
+      <div class="pio"><div class="pin">La Placinte</div><div class="pid">Strada Lipscani · Authentic Moldovan cuisine. <strong>Must try:</strong> cabbage or cheese pies, cabbage rolls with sour cream, polenta with cheese and eggs. Very affordable — eat like a local!</div><div class="pts"><span class="tag">Moldovan</span><span class="tag">Affordable</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Must-try Romanian dishes</div><div class="pid">🥩 <strong>Mici</strong> — grilled minced meat rolls with mustard, an absolute classic · 🥟 <strong>Sarmale</strong> — cabbage rolls stuffed with meat and rice, usually with sour cream · 🍮 <strong>Papanași</strong> — cheese doughnuts with sour cream and jam (the best Romanian dessert!) · 🍷 <strong>Vin fiert</strong> — mulled wine, a must in winter · 🫕 <strong>Ciorbă de burtă</strong> — hearty traditional tripe soup, beloved by locals</div><div class="pts"><span class="tag">Must Try</span><span class="tag">Traditional</span></div></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">☕</span><span class="ct">Specialty Coffee</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Origo</div><div class="pid">Strada Lipscani 9 · Bucharest's original specialty coffee shop (2013). Own roastery, V60, AeroPress. Turns into a cocktail bar in the evening.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">Own Roastery</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Nobis</div><div class="pid">Strada Lipscani 24 · Hidden gem right next to you. Minimal design, calm atmosphere.</div><div class="pts"><span class="tag">Specialty</span><span class="tag">Hidden Gem</span><span class="tag">1 min</span></div></div>
+    </div></div>
+
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🤝</span><span class="ct">Alex's Recommendations</span></div><div class="cb" style="padding-top:8px;">
+    <div class="hl"><p>Say you are coming from <strong>Alex from RH</strong> — you will be treated with something extra special every time. 🙏</p></div>
+    <div class="pio">
+      <div class="pin">💈 Another Barbershop</div>
+      <div class="pid">The best barbershop in the city — personally recommended. Ask for <strong>Andrei Tulumb</strong> and you will be in great hands. Book your appointment in advance!</div>
+      <div class="pts"><span class="tag">Booking required</span></div>
+      <div style="margin-top:8px;"><a href="https://anotherbarbershop.ro" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:7px 13px;text-decoration:none;"><span>💈</span><span style="font-size:12px;font-weight:600;color:var(--gold);">anotherbarbershop.ro</span></a></div>
+    </div>
+    <div class="pio" style="border-top:1px solid var(--off);padding-top:12px;">
+      <div class="pin">☕ Boteca13</div>
+      <div class="pid">A coffee shop with a fantastic vibe, just a short walk from the Old Town. Specialty coffee and sensational food — an experience in itself. Ask for <strong>Bogdan</strong>. ☕</div>
+      <div class="pts"><span class="tag">Specialty Coffee</span><span class="tag">Unique vibe</span></div>
+      <div style="margin-top:8px;"><a href="https://share.google/HQ8A9v52Qt0QqbKwn" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--bordo);border-radius:8px;padding:7px 13px;text-decoration:none;"><span>📍</span><span style="font-size:11px;font-weight:600;color:var(--gold);">View on Maps</span></a></div>
     </div>
   </div></div>
   <div class="card"><div class="ch"><span class="ci">🏦</span><span class="ct">Practical — ATM, exchange, supermarket</span></div><div class="cb">
-    <div class="ir"><span class="il">Supermarket</span><span class="iv">Mega Image — Calea Victoriei or Piața Unirii · ~07:00–23:00 · 5–8 min walk</span></div>
-    <div class="ir"><span class="il">ATM</span><span class="iv">Banca Transilvania — Strada Lipscani or Piața Unirii · 5 min</span></div>
-    <div class="ir"><span class="il">Currency exchange</span><span class="iv">Multiple offices on Strada Lipscani and Piața Unirii · check the rate first</span></div>
-    <div class="ir"><span class="il">Pharmacy</span><span class="iv">Catena or Sensiblu — Calea Victoriei or Piața Unirii · 5–8 min</span></div>
-  </div></div>
-  <div class="card"><div class="ch"><span class="ci">🏛️</span><span class="ct">Landmarks — don't miss</span></div><div class="cb" style="padding-top:8px;">
-    <div class="pio"><div class="pin">Curtea Veche</div><div class="pid">Strada Franceză 23-25 · Ruins of Vlad the Impaler's court, 15th century. 3 min away. Free entry.</div><div class="pts"><span class="tag">History</span><span class="tag">3 min</span></div></div>
-    <div class="pio"><div class="pin">Stavropoleos Church</div><div class="pid">Strada Stavropoleos 4 · Architectural jewel of the Old Town (1724). A rare moment of quiet in the heart of the city.</div><div class="pts"><span class="tag">Architecture</span><span class="tag">2 min</span></div></div>
-    <div class="pio"><div class="pin">Cărturești Carusel</div><div class="pid">Strada Lipscani 55 · One of the world's most beautiful bookstores — 6 floors, rooftop café.</div><div class="pts"><span class="tag">Culture</span><span class="tag">3 min</span></div></div>
-    <div class="pio"><div class="pin">Macca-Villacrosse Passage</div><div class="pid">Calea Victoriei · Yellow glass arcade from 1891 — a mandatory photo stop.</div><div class="pts"><span class="tag">Photogenic</span><span class="tag">5 min</span></div></div>
-  </div></div>
-</div>
+      <div class="ir"><span class="il">Supermarket</span><span class="iv">Mega Image — Calea Victoriei or Piața Unirii · open ~07:00–23:00 · 5–8 min walk</span></div>
+      <div class="ir"><span class="il">ATM</span><span class="iv">Banca Transilvania — Strada Lipscani or Piața Unirii · multiple ATMs · 5 min</span></div>
+      <div class="ir"><span class="il">Currency exchange</span><span class="iv">Multiple exchange offices on Strada Lipscani and around Piața Unirii · check the rate first · 5 min</span></div>
+      <div class="ir"><span class="il">Pharmacy</span><span class="iv">Catena or Sensiblu — Calea Victoriei or Piața Unirii · some with extended hours · 5–8 min</span></div>
+    </div></div>
+
+    <div class="card"><div class="ch"><span class="ci">🏛️</span><span class="ct">Landmarks — don't miss</span></div><div class="cb" style="padding-top:8px;">
+      <div class="pio"><div class="pin">Curtea Veche — Old Princely Court</div><div class="pid">Strada Franceză 23-25 · Ruins of Vlad the Impaler's 15th-century court — 3 min away. Free entry.</div><div class="pts"><span class="tag">History</span><span class="tag">3 min</span></div></div>
+      <div class="pio"><div class="pin">Stavropoleos Church</div><div class="pid">Strada Stavropoleos 4 · Architectural jewel of the Old Town (1724) — a rare moment of authentic quiet.</div><div class="pts"><span class="tag">Architecture</span><span class="tag">2 min</span></div></div>
+      <div class="pio"><div class="pin">Cărturești Carusel</div><div class="pid">Strada Lipscani 55 · One of the world's most beautiful bookstores — 6 white floors, rooftop café.</div><div class="pts"><span class="tag">Culture</span><span class="tag">3 min</span></div></div>
+      <div class="pio"><div class="pin">Macca-Villacrosse Passage</div><div class="pid">Calea Victoriei · Yellow glass arcade from 1891 — a mandatory photo stop.</div><div class="pts"><span class="tag">Photogenic</span><span class="tag">5 min</span></div></div>
+    </div></div>
+  </div>
 </div>
 
+<!-- HOW TO GET HERE -->
 <div class="section" id="tab-howtogo">
   <div class="ro">
     <div class="sec">Cum <em>Ajung</em></div>
@@ -727,12 +740,13 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
 </div>
 
 <!-- CHECKOUT -->
+
 <div class="section" id="tab-extras">
 <div class="ro">
   <div class="sec">Servicii <em>Extra</em></div>
   <div class="dk"><div style="padding:20px 20px 14px;"><p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:8px;">Facem sejurul de neuitat 🌟</p><p style="font-size:12px;color:rgba(255,255,255,.6);line-height:1.7;">Disponibile contra-cost, la cerere. Contactați-ne pe WhatsApp sau pe platforma de rezervare.</p></div></div>
   <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🚗</span><span class="ct">Transfer Aeroport — Mașină Premium</span></div><div class="cb"><p>Transfer privat aeroport ↔ Old Town Courtyard cu <strong>mașină premium</strong>. Confort maxim după un zbor lung, fără grija taxiurilor.</p><div class="hl"><p>✈️ Disponibil la orice oră. Contactați-ne cu cel puțin <strong>24 de ore înainte</strong>.</p></div><a href="https://wa.me/40723662199?text=Buna ziua, as dori informatii despre transferul aeroport." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Solicitați detalii</span></a></div></div>
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">💑</span><span class="ct">Pachet Special — Cuplu</span></div><div class="cb"><p>Transformăm studioul vostru într-un cadru de neuitat — pentru o aniversare, o cerere în căsătorie sau pur și simplu pentru că meritați ceva special.</p><div class="hl"><p>🌹 Poate include: decorațiuni cu petale de trandafir, lumânări parfumate, șampanie sau vin premium la rece, buchete de flori, mesaj personalizat, ciocolată artizanală. Personalizăm după dorința voastră.</p></div><a href="https://wa.me/40723662199?text=Buna ziua, as dori informatii despre pachetul special cuplu." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Solicitați detalii</span></a></div></div>
+  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">💑</span><span class="ct">Pachet Special — Cuplu</span></div><div class="cb"><p>Transformăm studioul vostru într-un cadru de neuitat — pentru o aniversare, o cerere în căsătorie sau pur și simplu pentru că meritați ceva special.</p><div class="hl"><p>🌹 Poate include: decorațiuni cu petale de trandafir, lumânări parfumate, șampanie sau vin premium la rece, buchete de flori, mesaj personalizat, ciocolată artizanală. Personalizăm după dorința voastră.</p></div><a href="https://wa.me/40723662199?text=Buna ziua, as dori informatii despre pachetul special." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Solicitați detalii</span></a></div></div>
   <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎂</span><span class="ct">Pachet Ziua de Naștere &amp; Aniversare</span></div><div class="cb"><p>Surprindeți pe cineva drag cu un studio pregătit special pentru o zi importantă. Creăm magia înainte de sosirea lor.</p><div class="hl"><p>🎉 Poate include: decorațiuni cu baloane, tort sau prăjituri artizanale, banner personalizat, flori, șampanie, lumânări. Spuneți-ne ce vă doriți!</p></div><a href="https://wa.me/40723662199?text=Buna ziua, as dori informatii despre pachetul aniversar." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Solicitați detalii</span></a></div></div>
 </div>
 <div class="en" style="display:none">
@@ -740,7 +754,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
   <div class="dk"><div style="padding:20px 20px 14px;"><p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:8px;">Make your stay unforgettable 🌟</p><p style="font-size:12px;color:rgba(255,255,255,.6);line-height:1.7;">Available at extra cost, on request. Contact us on WhatsApp or your booking platform.</p></div></div>
   <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🚗</span><span class="ct">Airport Transfer — Premium Car</span></div><div class="cb"><p>Private airport transfer ↔ Old Town Courtyard in a <strong>premium vehicle</strong>. Maximum comfort after a long flight.</p><div class="hl"><p>✈️ Available at any hour. Contact us at least <strong>24 hours in advance</strong>.</p></div><a href="https://wa.me/40723662199?text=Hello, I would like information about the airport transfer." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Request details</span></a></div></div>
   <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">💑</span><span class="ct">Special Package — Couples</span></div><div class="cb"><p>We transform your studio into an unforgettable setting — for an anniversary, a proposal, or simply because you deserve something special.</p><div class="hl"><p>🌹 Can include: rose petal decoration, scented candles, premium champagne or wine, flowers, personalised message, artisan chocolates. Fully customisable.</p></div><a href="https://wa.me/40723662199?text=Hello, I would like information about the couples package." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Request details</span></a></div></div>
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎂</span><span class="ct">Birthday &amp; Anniversary Package</span></div><div class="cb"><p>Surprise someone special with a studio set up just for them on an important day. We create the magic before they arrive.</p><div class="hl"><p>🎉 Can include: balloon decoration, artisan cake, custom banner, flowers, champagne, candles. Tell us what you'd like!</p></div><a href="https://wa.me/40723662199?text=Hello, I would like information about the birthday/anniversary package." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Request details</span></a></div></div>
+  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎂</span><span class="ct">Birthday &amp; Anniversary Package</span></div><div class="cb"><p>Surprise someone special with a studio set up just for them on an important day. We create the magic before they arrive.</p><div class="hl"><p>🎉 Can include: balloon decoration, artisan cake, custom banner, flowers, champagne, candles. Tell us what you would like!</p></div><a href="https://wa.me/40723662199?text=Hello, I would like information about the birthday package." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--bordo);border-radius:8px;padding:10px 16px;text-decoration:none;margin-top:4px;"><span>💬</span><span style="font-size:12px;font-weight:600;color:var(--gold);">Request details</span></a></div></div>
 </div>
 </div>
 
@@ -939,64 +953,28 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);min
 
 <!-- WORK -->
 <div class="section" id="tab-work">
-<div class="ro">
-  <div class="sec">Lucrează cu <em>Noi</em></div>
+  <div class="ro">
+    <div class="sec">Lucrează cu <em>Noi</em></div>
+  <div class="dk"><div style="padding:20px 20px 14px;"><p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:8px;">Apartamentul tău îți poate aduce venit — fără bătăi de cap.</p><p style="font-size:12px;color:rgba(255,255,255,.65);line-height:1.7;">RH gestionează apartamente în regim hotelier în București și la mare. Tu primești venitul, noi ne ocupăm de absolut tot.</p></div></div>
 
-  <div class="dk"><div style="padding:20px 20px 14px;">
-    <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:8px;">Apartamentul tău îți poate aduce venit — fără bătăi de cap.</p>
-    <p style="font-size:12px;color:rgba(255,255,255,.65);line-height:1.7;">RH gestionează apartamente în regim hotelier în București și la mare. Tu primești venitul, noi ne ocupăm de absolut tot.</p>
-  </div></div>
-
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🏠</span><span class="ct">Ești proprietar? Lucrează cu RH</span></div><div class="cb">
-    <p style="margin-bottom:14px;">Gestionăm apartamente în regim hotelier de la A la Z — check-in, curățenie, oaspeți, platforme, fiscalitate. Tu primești venitul lunar, noi ne ocupăm de tot.</p>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Property management complet</strong> — check-in/out, curățenie, comunicare oaspeți, fișe de cazare, situații de urgență</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Listing și optimizare</strong> pe Booking.com, Airbnb și alte platforme — fotografii profesionale, descrieri, prețuri dinamice</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Pregătire completă a apartamentului</strong> — dotări, amenajare pentru regim hotelier, kit-uri de primire oaspeți</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Transparență totală</strong> — rapoarte periodice cu venituri, ocupare și feedback oaspeți</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Fără surprize</strong> — contract clar, comision fix, fără costuri ascunse</div></div>
-    <div class="hl" style="margin-top:12px;"><p>Avem experiență din 2016 și peste 20 de proprietăți în portofoliu. Știm ce funcționează.</p></div>
-  </div></div>
-
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">📈</span><span class="ct">Vrei să investești în imobiliare?</span></div><div class="cb">
-    <p style="margin-bottom:12px;">Prin <strong>RH Estate</strong> te ghidăm în tot procesul — de la identificarea proprietății potrivite, până la punerea ei pe piață și generarea de venit imediat.</p>
-    <div class="ri"><div class="rd"></div><div class="rt">Identificăm proprietăți cu randament ridicat în locații premium</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Consultanță completă la achiziție și negociere</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Design interior și amenajare pentru regim hotelier</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Preluare imediată în portofoliul RH după achiziție</div></div>
-  </div></div>
-
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎁</span><span class="ct">Recomanzi un proprietar? Primești comision</span></div><div class="cb">
-    <p>Cunoști pe cineva cu un apartament nefolosit sau care vrea să îl pună la muncă? Dacă îl recomanzi și ajunge să colaboreze cu noi, îți oferim un <strong>comision de recomandare</strong> — simplu, transparent, fără complicații.</p>
-  </div></div>
-  <div class="dk"><div style="padding:20px;"><p style="font-family:Cormorant Garamond,serif;font-size:18px;color:var(--gold);margin-bottom:6px;">Hai sa vorbim</p><a href="https://wa.me/40723662199" class="dl"><div class="dll">WhatsApp</div><div class="dlv">0723 662 199</div></a><a href="/cdn-cgi/l/email-protection#4b392365392e382e393d2e653b39243b2e393f222e380b2c262a222765282426" class="dl"><div class="dll">Email</div><div class="dlv" style="font-size:12px;"><span class="__cf_email__" data-cfemail="fc8e94d28e998f998e8a99d28c8e938c998e8895998fbc9b919d9590d29f9391">[email&#160;protected]</span></div></a></div></div>
-</div>
-<div class="en" style="display:none">
-  <div class="sec">Work <em>With Us</em></div>
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🏠</span><span class="ct">Property Owner? Partner with RH</span></div><div class="cb">
-    <p style="margin-bottom:14px;">We manage short-term rental apartments end-to-end — check-in, cleaning, guests, platforms, everything. You receive the monthly income, we handle all the rest.</p>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Full property management</strong> — check-in/out, cleaning, guest communication, registration forms, emergencies</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Listing and optimisation</strong> on Booking.com, Airbnb and other platforms — professional photos, descriptions, dynamic pricing</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Full apartment setup</strong> — furnishing, hotel-grade amenities, guest welcome kits</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>Full transparency</strong> — regular reports with income, occupancy and guest feedback</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt"><strong>No surprises</strong> — clear contract, fixed commission, no hidden costs</div></div>
-    <div class="hl" style="margin-top:12px;"><p>We have been operating since 2016 with 20+ properties in our portfolio. We know what works.</p></div>
-  </div></div>
-
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">📈</span><span class="ct">Want to invest in real estate?</span></div><div class="cb">
-    <p style="margin-bottom:12px;">Through <strong>RH Estate</strong> we guide you through the entire process — from identifying the right property to putting it on the market and generating income immediately.</p>
-    <div class="ri"><div class="rd"></div><div class="rt">We identify high-yield properties in premium locations</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Full acquisition consultancy and negotiation</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Interior design and furnishing for short-term rental</div></div>
-    <div class="ri"><div class="rd"></div><div class="rt">Immediate onboarding into the RH portfolio after purchase</div></div>
-  </div></div>
-
-  <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎁</span><span class="ct">Refer a property owner, earn a commission</span></div><div class="cb">
-    <p>Know someone with an unused apartment or looking to make it work harder? If you refer them and they start working with us, we pay you a <strong>referral commission</strong> — simple, transparent, no complications.</p>
-  </div></div>
-  <div class="dk"><div style="padding:20px;"><p style="font-family:Cormorant Garamond,serif;font-size:18px;color:var(--gold);margin-bottom:6px;">Let us Talk</p><a href="https://wa.me/40723662199" class="dl"><div class="dll">WhatsApp</div><div class="dlv">+40 723 662 199</div></a><a href="/cdn-cgi/l/email-protection#790b11570b1c0a1c0b0f1c57090b16091c0b0d101c0a391e14181015571a1614" class="dl"><div class="dll">Email</div><div class="dlv" style="font-size:12px;"><span class="__cf_email__" data-cfemail="b0c2d89ec2d5c3d5c2c6d59ec0c2dfc0d5c2c4d9d5c3f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</span></div></a></div></div>
-</div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🏠</span><span class="ct">Ești proprietar? Lucrează cu RH</span></div><div class="cb"><p style="margin-bottom:12px;">Gestionăm apartamente în regim hotelier de la A la Z — tu primești venitul, noi ne ocupăm de tot.</p><div class="ri"><div class="rd"></div><div class="rt"><strong>Property management complet</strong> — check-in/out, curățenie, oaspeți, fișe cazare</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Listing și optimizare</strong> pe Booking.com, Airbnb și alte platforme</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Fotografie profesională</strong> și pregătire apartament</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Transparență totală</strong> — rapoarte și venituri în timp real</div></div></div></div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎁</span><span class="ct">Recomanzi un proprietar? Primești comision</span></div><div class="cb"><p>Dacă recomanzi un proprietar care începe o colaborare cu RH, îți oferim un <strong>comision de recomandare</strong>. Simplu și transparent.</p></div></div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">📈</span><span class="ct">Vrei să investești în imobiliare?</span></div><div class="cb"><p style="margin-bottom:12px;">Prin <strong>RH Estate</strong> te ghidăm în tot procesul:</p><div class="ri"><div class="rd"></div><div class="rt">Proprietăți cu randament ridicat în locații premium</div></div><div class="ri"><div class="rd"></div><div class="rt">Consultanță achiziție și negociere</div></div><div class="ri"><div class="rd"></div><div class="rt">Design interior și amenajare pentru regim hotelier</div></div><div class="ri"><div class="rd"></div><div class="rt">Preluare imediată în portofoliul RH</div></div></div></div>
+      <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🌍</span><span class="ct">Suntem deschiși și altor orașe și țări</span></div><div class="cb"><p>Deși suntem activi în București și la mare, suntem deschiși colaborărilor și din <strong>alte orașe sau țări</strong>. Dacă ai o proprietate în altă locație și vrei să explorăm posibilitățile împreună, scrie-ne — discutăm cu drag!</p></div></div>
+  <div class="dk"><div style="padding:20px;"><p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:6px;">Hai să vorbim</p><p style="font-size:12px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:16px;">O discuție fără obligații — găsim împreună soluția potrivită.</p><a href="https://wa.me/40723662199" class="dl"><div class="dll">WhatsApp</div><div class="dlv">0723 662 199</div></a><a href="/cdn-cgi/l/email-protection#f3819bdd81968096818596dd83819c839681879a9680b3949e929a9fdd909c9e" class="dl"><div class="dll">Email</div><div class="dlv" style="font-size:12px;"><span class="__cf_email__" data-cfemail="c5b7adebb7a0b6a0b7b3a0ebb5b7aab5a0b7b1aca0b685a2a8a4aca9eba6aaa8">[email&#160;protected]</span></div></a></div></div>
+  </div>
+  <div class="en" style="display:none">
+    <div class="sec">Work <em>With Us</em></div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🏠</span><span class="ct">Property Owner? Partner with RH</span></div><div class="cb"><p style="margin-bottom:12px;">We manage short-term rental apartments end-to-end — you receive the income, we handle everything.</p><div class="ri"><div class="rd"></div><div class="rt"><strong>Full property management</strong> — check-in/out, cleaning, guests, registration</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Listing &amp; optimisation</strong> on Booking.com, Airbnb and more</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Professional photography</strong> and apartment preparation</div></div><div class="ri"><div class="rd"></div><div class="rt"><strong>Full transparency</strong> — real-time reports and revenue</div></div></div></div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🎁</span><span class="ct">Refer a property owner, earn a commission</span></div><div class="cb"><p>Refer a property owner who starts working with RH and we'll pay you a <strong>referral commission</strong>. Simple and transparent.</p></div></div>
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">📈</span><span class="ct">Want to invest in real estate?</span></div><div class="cb"><p style="margin-bottom:12px;">Through <strong>RH Estate</strong> we guide you through the full process:</p><div class="ri"><div class="rd"></div><div class="rt">High-yield properties in premium locations</div></div><div class="ri"><div class="rd"></div><div class="rt">Acquisition consultancy and negotiation</div></div><div class="ri"><div class="rd"></div><div class="rt">Interior design for short-term rental</div></div><div class="ri"><div class="rd"></div><div class="rt">Immediate onboarding into RH portfolio</div></div></div></div>
+      
+    <div class="card" style="border-left:3px solid var(--gold);"><div class="ch"><span class="ci">🌍</span><span class="ct">Open to other cities and countries</span></div><div class="cb"><p>Although we are currently active in Bucharest and by the sea, we are open to collaborations from <strong>other cities or countries</strong>. If you have a property elsewhere and would like to explore the possibilities, reach out — we would love to chat!</p></div></div>
+  <div class="dk"><div style="padding:20px;"><p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);margin-bottom:6px;">Let's Talk</p><p style="font-size:12px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:16px;">No-obligation conversation — we'll find the right solution together.</p><a href="https://wa.me/40723662199" class="dl"><div class="dll">WhatsApp</div><div class="dlv">+40 723 662 199</div></a><a href="/cdn-cgi/l/email-protection#ef9d87c19d8a9c8a9d998ac19f9d809f8a9d9b868a9caf88828e8683c18c8082" class="dl"><div class="dll">Email</div><div class="dlv" style="font-size:12px;"><span class="__cf_email__" data-cfemail="e19389cf93849284939784cf91938e91849395888492a1868c80888dcf828e8c">[email&#160;protected]</span></div></a></div></div>
+  </div>
 </div>
 
+<!-- CONTACT -->
 <div class="section" id="tab-contact">
   <div class="ro">
     <div class="sec">Contact &amp; <em>Asistență</em></div>
@@ -1066,4 +1044,5 @@ setLang = function(l) {
 };
 </script>
 </body>
-</html>
+</html  
+  >
